@@ -32,13 +32,16 @@ int main(){
     //measurement variables
     double r[num];
     double a[num];
+    Matrix<float,num,2> mears;
+    mears = [r,a];
 
 
     //first value of the status
-    x[0] = 0;
-    y[0] = 500;
-    vx[0] = 50;
-    vy[0] = 0;
+//    x[0] = 0;
+//    y[0] = 500;
+//    vx[0] = 50;
+//    vy[0] = 0;
+    status[0]<<0,500,50,0;
 
     //EKF loop
     for (int i=1; i<num; i++){
@@ -50,7 +53,7 @@ int main(){
 
         //观测值，这里用公式算观测值模拟从雷达读数据了
         r[i] = sqrt(pow(x[i-1],2)+pow(y[i-1],2));
-        a[i] = arctan(x[i-1]/y[i-1]);
+        a[i] = atan(x[i-1]/y[i-1]);
 
 
 
