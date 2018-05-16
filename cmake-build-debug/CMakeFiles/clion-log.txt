@@ -1,0 +1,4 @@
+/home/slam/software/clion-2018.1.1/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/slam/CLionProjects/Kalman
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/slam/CLionProjects/Kalman/cmake-build-debug
